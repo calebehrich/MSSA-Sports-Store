@@ -81,6 +81,13 @@ namespace SportsStore.Domain.Concrete
                                                            emailSettings.MailToAddress,
                                                            "New order submitted!",
                                                            body.ToString());
+
+                if (emailSettings.WriteAsFile)
+                {
+                    mailMessage.BodyEncoding = Encoding.ASCII;
+                }
+
+                smtpClient.Send(mailMessage);
             }
         }
 
