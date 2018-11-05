@@ -27,7 +27,6 @@ namespace SportsStore.WebUI.DependencyResolution {
     using SportsStore.Domain.Entities;
     using SportsStore.Domain.Concrete;
     using StructureMap;
-    using System.Net.Mail;
     using System.Configuration;
 
 
